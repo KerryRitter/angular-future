@@ -14,6 +14,6 @@
         "services/navController.ts",
         "services/navParams.ts",
         "services/stateHistory.ts",
-        "angular-future-app.ts"
+        "angularFutureApp.ts"
     ]
 }
