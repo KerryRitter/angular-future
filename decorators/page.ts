@@ -10,7 +10,7 @@ import resolveModule from "../resolveModule";
  * @returns {ClassDecorator}
  */
 export function Page(module: ng.IModule | string, stateName: string, config: ng.ui.IState = {}) {
-   return function (target: IPage) {
+   return function (target: af.IPage) {
       module = resolveModule(module);
       (module as ng.IModule).config(["$stateProvider", function ($stateProvider: ng.ui.IStateProvider) {
          target.__stateName = stateName;

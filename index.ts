@@ -1,6 +1,4 @@
-export {NavController} from "./services/navController";
-export {NavParams} from "./services/navParams";
-export {StateHistory} from "./services/stateHistory";
+/// <reference path="typings.d.ts" />
 
 export {App} from "./decorators/app";
 export {ClassFactory} from "./decorators/classFactory";
