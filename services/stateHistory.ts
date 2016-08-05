@@ -1,4 +1,6 @@
-export class StateHistory {
+/// <reference path="../typings.d.ts" />
+
+class StateHistory {
 	public static $inject = ["$rootScope", "$state", "$q"];
 
 	private _history = [];

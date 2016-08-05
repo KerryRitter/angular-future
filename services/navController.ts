@@ -1,7 +1,6 @@
-import {IPage} from "../classes/pageBase";
-import {StateHistory} from "./stateHistory";
+/// <reference path="../typings.d.ts" />
 
-export class NavController {
+class NavController {
     public static $inject = ["$log", "$state", "stateHistory"];
 
     public constructor(

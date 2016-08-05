@@ -22,5 +22,3 @@ export {Run} from "./decorators/run";
 export {Service} from "./decorators/service";
 export {ServiceFactory} from "./decorators/serviceFactory";
 export {Value} from "./decorators/value";
-
-export {PageBase} from "./classes/pageBase";

@@ -11,6 +11,9 @@
         "noImplicitAny": false
     },
     "files": [
-      "angular-future-app.ts"
+        "services/navController.ts",
+        "services/navParams.ts",
+        "services/stateHistory.ts",
+        "angular-future-app.ts"
     ]
 }

@@ -1,8 +1,4 @@
-/// <reference path="typings/index.d.ts" />
-
-import {NavController} from "./services/navController";
-import {NavParams} from "./services/navParams";
-import {StateHistory} from "./services/stateHistory";
+/// <reference path="typings.d.ts" />
 
 const angularFuture = angular.module("angular-future", ["ui.router"]);
 

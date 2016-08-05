@@ -1,5 +1,4 @@
 import resolveModule from "../resolveModule";
-import {IPage} from "../classes/pageBase";
 
 /**
  * Declare UIRouter state with decorated class as controller.

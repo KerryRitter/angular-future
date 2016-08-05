@@ -1,4 +1,6 @@
-export class NavParams {
+/// <reference path="../typings.d.ts" />
+
+class NavParams {
     public static $inject = ["$state"];
 
     public constructor(
