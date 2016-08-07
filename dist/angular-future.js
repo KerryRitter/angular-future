@@ -118,10 +118,10 @@ var StateHistory = (function () {
     StateHistory.$inject = ["$rootScope", "$state", "$q"];
     return StateHistory;
 }());
-var angularFuture = angular.module("angular-future", ["ui.router"]);
-angularFuture.service("navController", NavController);
-angularFuture.service("navParams", NavParams);
-angularFuture.service("stateHistory", StateHistory);
-angularFuture.run(["stateHistory", function (stateHistory) {
+angular.module("angular-future", ["ui.router"])
+    .service("navController", NavController)
+    .service("navParams", NavParams)
+    .service("stateHistory", StateHistory)
+    .run(["stateHistory", function (stateHistory) {
         stateHistory.setupRunWatcher();
     }]);

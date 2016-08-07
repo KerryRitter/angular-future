@@ -3,6 +3,7 @@
 declare namespace af {
     interface IPage {
         __stateName?: string;
+        __stateConfig?: ng.ui.IState
     }
 
     interface INavController {

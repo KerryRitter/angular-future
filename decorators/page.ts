@@ -14,12 +14,12 @@ export function Page(module: ng.IModule | string, stateName: string, config: ng.
       module = resolveModule(module);
       (module as ng.IModule).config(["$stateProvider", function ($stateProvider: ng.ui.IStateProvider) {
          target.__stateName = stateName;
-
-         $stateProvider
-            .state(stateName, angular.extend({
+         target.__stateConfig = angular.extend({
                controller: target,
                controllerAs: "$ctrl"
-            }, config));
+            }, config);
+
+         $stateProvider.state(target.__stateName, target.__stateConfig);
       }]);
    };
 }
