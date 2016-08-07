@@ -1,9 +1,9 @@
-const angularFuture = angular.module("angular-future", ["ui.router"]);
+angular.module("angular-future", ["ui.router"])
 
-angularFuture.service("navController", NavController);
-angularFuture.service("navParams", NavParams);
-angularFuture.service("stateHistory", StateHistory);
+    .service("navController", NavController)
+    .service("navParams", NavParams)
+    .service("stateHistory", StateHistory)
 
-angularFuture.run(["stateHistory", (stateHistory: StateHistory) => {
-    stateHistory.setupRunWatcher();
-}]);
+    .run(["stateHistory", (stateHistory: StateHistory) => {
+        stateHistory.setupRunWatcher();
+    }]);
