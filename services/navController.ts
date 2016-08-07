@@ -10,8 +10,8 @@ class NavController {
     ) {
     }
 
-    public push(page: IPage|string, params?: any) {
-        this.state.go(angular.isString(page) ? page : (page as IPage).__stateName, params);
+    public push(page: af.IPage|string, params?: any) {
+        this.state.go(angular.isString(page) ? page : (page as af.IPage).__stateName, params);
     }
 
     public pop(params?: any) {

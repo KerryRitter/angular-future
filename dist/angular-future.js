@@ -118,7 +118,6 @@ var StateHistory = (function () {
     StateHistory.$inject = ["$rootScope", "$state", "$q"];
     return StateHistory;
 }());
-/// <reference path="typings.d.ts" />
 var angularFuture = angular.module("angular-future", ["ui.router"]);
 angularFuture.service("navController", NavController);
 angularFuture.service("navParams", NavParams);
