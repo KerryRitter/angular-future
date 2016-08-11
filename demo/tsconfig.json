@@ -10,10 +10,9 @@
         "removeComments": false,
         "noImplicitAny": false
     },
-    "files": [
-        "services/navController.ts",
-        "services/navParams.ts",
-        "services/stateHistory.ts",
-        "angularFutureApp.ts"
+    "exclude": [
+        "decorators",
+        "node_modules",
+        "typings"
     ]
 }
