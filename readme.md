@@ -1,5 +1,7 @@
 # Angular Future
 
+TypeScript decorators for Angular 1.5 
+
 ## What is Angular Future?
 
 Angular Future is simply a layer of TypeScript decorators to be used with Angular 1.5 and up to make your Angular 1.x better and more like the future of JavaScript development. Borrowing design ideas from Angular 2, React, and various Angular 2 migration libraries, Angular Future is designed not to mimic Angular 2, but to make Angular 1 better for the TypeScript developer.

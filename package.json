@@ -1,6 +1,6 @@
 {
   "name": "angular-future",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "main": "./decorators.ts",
   "typings": "./typings/index.d.ts",
   "dependencies": {
@@ -11,5 +11,9 @@
   },
   "scripts": {
     "postinstall": "typings install"
+  },
+  "repository": { 
+    "type": "git", 
+    "url": "https://github.com/KerryRitter/angular-future.git"
   }
 }
