@@ -1,5 +1,3 @@
-/// <reference path="typings/index.d.ts" />
-
 interface IModuleOptions {
     element?: (string | Element | Document);
     name: string;
