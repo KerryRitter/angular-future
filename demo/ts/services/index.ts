@@ -1,0 +1,1 @@
+export { MyService } from "./myService";
