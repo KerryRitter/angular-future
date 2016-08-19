@@ -1,3 +1,5 @@
+/// <reference path="typings/index.d.ts" />
+
 interface IModuleOptions {
     element?: (string | Element | Document);
     name: string;
@@ -133,7 +135,7 @@ export function Controller(options: any) {
     };
 }
 
-export function Filter(options: any): MethodDecorator {
+export function Filter(options: any) {
     return function(target: any, key: string) {
         target = key ? target[key] : target;
         target.$$type = "filter";
