@@ -1,20 +1,29 @@
+/// <reference path="../typings/index.d.ts" />
+
 import { 
-    NgModule, 
+    Module, 
     Inject, 
     Config, 
     Run,
     Constant,
     Value
 } from "../../decorators";
-import { MyComponent } from "./myComponent";
-import { MyService } from "./myService";
-import { MyFactory } from "./myFactory";
-import { MyDirective } from "./myDirective";
+import { MyComponent } from "./components/index";
+import { MyService } from "./services/index";
+import { MyDirective } from "./directives/index";
+import { HomePage, TestPage } from "./pages/index";
 
-@NgModule({
+@Module({
     name: "app",
-    imports: [],
-    declarations: [MyComponent, MyService, MyFactory, MyDirective]
+    imports: ["ui.router"],
+    declarations: [
+        MyComponent,
+        MyService,
+        MyDirective,
+        HomePage, 
+        TestPage
+    ],
+    bootstrap: HomePage
 })
 class MyModule {
     @Config()

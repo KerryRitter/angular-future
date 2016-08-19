@@ -1,5 +1,5 @@
-import { Inject, Directive } from "../../decorators";
-import { MyService } from "./myService";
+import { Inject, Directive } from "../../../decorators";
+import { MyService } from "../services/myService";
 
 @Directive({
     name: "myDirective",

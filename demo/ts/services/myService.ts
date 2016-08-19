@@ -1,4 +1,4 @@
-import { Inject, Service } from "../../decorators";
+import { Inject, Service } from "../../../decorators";
 
 @Service({
     name: "myService"

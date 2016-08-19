@@ -1,0 +1,1 @@
+export { MyDirective } from "./myDirective";
